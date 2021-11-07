@@ -50,12 +50,12 @@ class Calendar extends React.Component {
   render() {
     return (
       <Widget>
-        <div class={`container mb-0 pb-0 ${styles.calendarHeading}`}>
+        <div className={`container mb-0 pb-0 ${styles.calendarHeading}`}>
           <h2 className={`my-auto d-inline`}>
             {this.state.monthName} {this.state.year}
           </h2>
-          <button type="button" class="btn btn-light d-inline float-end m-3">→</button>
-          <button type="button" class="btn btn-light d-inline float-end m-3">←</button>
+          <button type="button" className="btn btn-light d-inline float-end m-3">→</button>
+          <button type="button" className="btn btn-light d-inline float-end m-3">←</button>
         </div>
         <table className={`table ${styles.calendar}`}>
           <thead>
@@ -75,7 +75,7 @@ class Calendar extends React.Component {
                 <tr className={styles.calendar} key={i}>
                   {week.map((day, j) => {
                     return <td key={j}>
-                    <button type="button" class="btn btn-white d-inline">{day}</button>
+                    <button type="button" className="btn btn-white d-inline">{day}</button>
                     </td>;
                   })}
                 </tr>
