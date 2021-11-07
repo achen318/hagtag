@@ -1,12 +1,15 @@
+import Link from 'next/link';
 import { useUser } from '@auth0/nextjs-auth0';
 
 export default function Profile() {
-  const { user, error } = useUser();
-  if (error) return <div>{error.message}</div>;
+  const { user } = useUser();
 
-  if (user)
-    // user is logged in
-    return <a href="/api/auth/logout">Logout</a>;
-  // user is not logged in
-  else return <a href="api/auth/login">Login</a>;
+  const route = user ? '/api/auth/logout' : '/api/auth/login';
+  const content = user ? 'Log out' : 'Log in';
+
+  return (
+    <Link href={route}>
+      <a className="nav-link">{content}</a>
+    </Link>
+  );
 }
