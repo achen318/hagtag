@@ -5,6 +5,12 @@
   text-align:center;
 
 }
+.calendarHeading{
+  background-color:#534aff;
+  color:white;
+  height:100px;
+}
+
 
 .calendar td{
   text-align: center;

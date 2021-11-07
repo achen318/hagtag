@@ -7,7 +7,12 @@ import styles from './calendar.module.css';
 class Calendar extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { calendarArray: this.getCalendarArray() };
+    this.state = {
+      day: new Date().getDate(),
+      year: new Date().getFullYear(),
+      monthName: new Date().toLocaleString('default', { month: 'long' }),
+      calendarArray: this.getCalendarArray()
+    };
   }
 
   getCalendarArray() {
@@ -45,7 +50,13 @@ class Calendar extends React.Component {
   render() {
     return (
       <Widget>
-        <h1>Calendar</h1>
+        <div className={`container mb-0 pb-0 ${styles.calendarHeading}`}>
+          <h2 className={`my-auto d-inline`}>
+            {this.state.monthName} {this.state.year}
+          </h2>
+          <button type="button" className="btn btn-light d-inline float-end m-3">→</button>
+          <button type="button" className="btn btn-light d-inline float-end m-3">←</button>
+        </div>
         <table className={`table ${styles.calendar}`}>
           <thead>
             <tr className={styles.calendar}>
@@ -63,13 +74,19 @@ class Calendar extends React.Component {
               return (
                 <tr className={styles.calendar} key={i}>
                   {week.map((day, j) => {
-                    return <td key={j}>{day}</td>;
+                    return <td key={j}>
+                    <button type="button" className="btn btn-white d-inline">{day}</button>
+                    </td>;
                   })}
                 </tr>
               );
             })}
           </tbody>
         </table>
+        <div className="container">
+            <h2 className="d-inline pb-3">Your Reminders</h2>
+            <button type="button" className="btn btn-light float-end">+</button>
+        </div>
       </Widget>
     );
   }
