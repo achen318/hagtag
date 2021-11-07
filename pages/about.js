@@ -14,15 +14,15 @@ export default function About() {
 	  </ul>
 	  
 	  <h2>Name origin</h2>
-	  <p>Hackathon become Hagtag</p>
+	  <p>Hackathon → Hagtag</p>
 
-	  <h2>BENGAMIN</h2>
-	  <Image
+	  <h2>NOT BENGAMIN</h2>
+	    <Image
 
-	  src="/../public/images/BENGAMIN.jpg" 
-	  alt="BENGAMIN"
-	  width="500"
-	  height="500"
+	    src="/../public/images/bonzi monke.png" 
+	    alt="BENGAMIN"
+	    width="500"
+	    height="500"
 	  />
 
 	  
