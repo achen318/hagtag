@@ -1,0 +1,11 @@
+.calendar th{
+  background-color:#534aff;
+  color:white;
+  padding-right:15px;
+  text-align:center;
+
+}
+
+.calendar td{
+  text-align: center;
+}

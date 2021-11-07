@@ -1,10 +1,11 @@
-import Layout from '../components/layout';
+import Layout from '../components/Layout';
+import Calendar from '../components/widgets/Calendar';
 
+// The dashboard page
 export default function Home() {
   return (
-    <Layout>
-      <h1>Home</h1>
-      <p>Welcome to your dashboard!</p>
+    <Layout title="Home">
+      <Calendar />
     </Layout>
   );
 }
