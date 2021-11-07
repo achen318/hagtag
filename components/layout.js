@@ -1,7 +1,7 @@
 import Script from 'next/script';
 
 import Head_ from './head_';
-import Menu from './Menu';
+import Menu from './menu';
 import Footer from './footer';
 
 export default function Layout(props) {

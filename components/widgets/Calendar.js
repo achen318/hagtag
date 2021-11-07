@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Widget from './widget';
+import Widget from './Widget';
 
 import styles from './calendar.module.css';
 
