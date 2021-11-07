@@ -14,7 +14,7 @@ export default function About() {
 	  </ul>
 	  
 	  <h2>Name origin</h2>
-	  <p>Hackathon --> Hagtag</p>
+	  <p>Hackathon become Hagtag</p>
 
 	  <h2>BENGAMIN</h2>
 	  <Image
