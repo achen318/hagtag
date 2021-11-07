@@ -3,30 +3,33 @@ import Image from 'next/image'
 export default function About() {
   return (
     <Layout title="About Us">
-      <h1>About Us</h1>
-	  <hr></hr>
-      <p>HagTag is a daily habit tracker that has useful features to make you more productive!</p>
+		<head>
+		<link rel="icon" href="../public/images/hagtaglogo.png" />
+		</head>
+	    <div class="header-container">
+	  		<h1 class="title">HagTag</h1>
+			<p class="about">an app designed to make you more productive.</p>
+			
+			<Image
+				src="/../public/images/hagtaglogo.png" 
+				alt="hackathon"
+				width="250"
+				height="250"
+			/>
+			
+	    </div>
 
-	  <h2>Features</h2>
-	  <ul>
-		  <li>Habit streak tracker</li>
-		  <li>todo lists</li>
-	  </ul>
-	  
-	  <h2>Name origin</h2>
-	  <p>Hackathon → Hagtag</p>
+	    <div class="mid-container">
+	  		
+	  		<h1>Features</h1>
+			<p>Habit streak tracker</p>
+			<p>todo lists</p>
 
-	  <h2>NOT BENGAMIN</h2>
-	    <Image
+	    	<h1>Name Origin</h1>
+	    	<p>Hackathon → HagTag</p>
+	    </div>
 
-	    src="/../public/images/bonzi monke.png" 
-	    alt="BENGAMIN"
-	    width="500"
-	    height="500"
-	  />
 
-	  
-	  
     </Layout>
   );
 }
