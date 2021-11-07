@@ -7,6 +7,8 @@ import Head_ from './head_';
 import Menu from './menu';
 import Footer from './footer';
 
+import logo from '../public/images/hagtaglogo.png';
+
 export default function Layout(props) {
   const { user } = useUser();
 
@@ -46,12 +48,7 @@ export default function Layout(props) {
         <h1 className="title">HagTag</h1>
         <p className="about">An app designed for productivity</p>
 
-        <Image
-          src="/../public/images/hagtaglogo.png"
-          alt="HagTag logo"
-          width="250"
-          height="250"
-        />
+        <Image src={logo} alt="HagTag logo" width="250" height="250" />
       </div>
 
       <div className="mid-container">
