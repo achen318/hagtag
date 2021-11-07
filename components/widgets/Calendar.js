@@ -83,9 +83,9 @@ class Calendar extends React.Component {
             })}
           </tbody>
         </table>
-        <div class="container">
-            <h2 class="d-inline pb-3">Your Reminders</h2>
-            <button type="button" class="btn btn-light float-end">+</button>
+        <div className="container">
+            <h2 className="d-inline pb-3">Your Reminders</h2>
+            <button type="button" className="btn btn-light float-end">+</button>
         </div>
       </Widget>
     );
