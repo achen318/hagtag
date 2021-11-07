@@ -6,7 +6,7 @@ export default function About() {
 		<head>
 		<link rel="icon" href="../public/images/hagtaglogo.png" />
 		</head>
-	    <div class="header-container">
+	    <div className="header-container">
 	  		<h1 class="title">HagTag</h1>
 			<p class="about">an app designed to make you more productive.</p>
 			
@@ -19,7 +19,7 @@ export default function About() {
 			
 	    </div>
 
-	    <div class="mid-container">
+	    <div className="mid-container">
 	  		
 	  		<h1>Features</h1>
 			<p>Habit streak tracker</p>
