@@ -1,7 +1,9 @@
+import Layout from '../components/layout';
+
 export default function Settings() {
   return (
-    <div>
+    <Layout>
       <h1>Settings</h1>
-    </div>
+    </Layout>
   );
 }

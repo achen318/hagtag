@@ -1,7 +1,9 @@
+import Layout from '../components/layout';
+
 export default function Notes() {
   return (
-    <div>
+    <Layout>
       <h1>Notes</h1>
-    </div>
+    </Layout>
   );
 }

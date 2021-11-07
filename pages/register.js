@@ -1,7 +1,9 @@
+import Layout from '../components/layout';
+
 export default function Register() {
   return (
-    <div>
+    <Layout>
       <h1>Register</h1>
-    </div>
+    </Layout>
   );
 }
