@@ -35,6 +35,12 @@ img {
 }
 
 /* landing page */
+
+.landing-page {
+  margin: 0;
+  background-color: #bae1ff;
+}
+
 .about {
   font-size: 1.6rem;
   font-weight: normal;
@@ -56,7 +62,7 @@ img {
   margin-bottom: 6em;
   text-align: center;
   width: auto;
-  padding: 3em 0em;
+  padding: 3em 0;
 }
 
 p {

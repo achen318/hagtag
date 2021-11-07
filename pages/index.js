@@ -3,21 +3,30 @@ import { useUser } from '@auth0/nextjs-auth0';
 import Layout from '../components/layout';
 import Calendar from '../components/widgets/Calendar';
 
-// The dashboard page
-export default function Home() {
+import dbConnect from '../utils/dbConnect';
+import User from '../models/user.model';
+
+const Index = ({ users }) => {
   const { user } = useUser();
 
-  if (user) {
-    return (
-      <Layout title="Home">
-        <Calendar />
-      </Layout>
-    );
-  } else {
-    return (
-      <Layout title="Home">
-        <p>You are not logged in.</p>
-      </Layout>
-    );
-  }
+  return (
+    <Layout title="Home" user={user}>
+      <Calendar />
+    </Layout>
+  );
+};
+
+export async function getServerSideProps() {
+  await dbConnect();
+
+  const result = await User.find({});
+  const users = result.map((doc) => {
+    const user = doc.toObject();
+    user._id = user._id.toString();
+    return user;
+  });
+
+  return { props: { users: users } };
 }
+
+export default Index;

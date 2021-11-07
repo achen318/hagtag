@@ -24,22 +24,7 @@ export default function Menu() {
           <ul className="navbar-nav ms-auto text-center">
             <li>
               <Link href="/">
-                <a className="nav-link">Dashboard</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/about">
-                <a className="nav-link">About</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/notes">
-                <a className="nav-link">Notes</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/settings">
-                <a className="nav-link">Settings</a>
+                <a className="nav-link">Home</a>
               </Link>
             </li>
             <li>
