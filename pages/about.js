@@ -7,8 +7,8 @@ export default function About() {
 		<link rel="icon" href="../public/images/hagtaglogo.png" />
 		</head>
 	    <div className="header-container">
-	  		<h1 class="title">HagTag</h1>
-			<p class="about">an app designed to make you more productive.</p>
+	  		<h1 className="title">HagTag</h1>
+			<p className="about">an app designed to make you more productive.</p>
 			
 			<Image
 				src="/../public/images/hagtaglogo.png" 
