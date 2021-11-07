@@ -53,8 +53,9 @@ export default function Layout(props) {
 
       <div className="mid-container">
         <h1>Features</h1>
-        <p>Calendar</p>
-        <p>Reminder list</p>
+        <p>A VERY functional calendar</p>
+        <p>Authentication</p>
+        <p></p>
 
         <h1>Name Origin</h1>
         <p>Hackathon → HagTag</p>

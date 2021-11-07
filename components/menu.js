@@ -1,11 +1,15 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 import Profile from './widgets/Profile';
+
+import logo from '../public/images/hagtaglogo.png';
 
 export default function Menu() {
   return (
     <div className="container">
       <nav className="navbar navbar-expand-md navbar-light">
+        <Image src={logo} alt="HagTag logo" width="30" height="30" />
         <Link href="/">
           <a className="navbar-brand">Hagtag</a>
         </Link>
