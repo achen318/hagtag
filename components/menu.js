@@ -1,5 +1,7 @@
 import Link from 'next/link';
 
+import Profile from './widgets/Profile';
+
 export default function Menu() {
   return (
     <div className="container">
@@ -41,14 +43,7 @@ export default function Menu() {
               </Link>
             </li>
             <li>
-              <Link href="/login">
-                <a className="nav-link">Login</a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/register">
-                <a className="nav-link">Register</a>
-              </Link>
+              <Profile />
             </li>
           </ul>
         </div>
