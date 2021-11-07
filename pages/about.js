@@ -1,10 +1,11 @@
 import Layout from '../components/layout';
-import Image from 'next/image'
+import Image from 'next/image';
+import logo from '../public/images/hagtaglogo.png';
 export default function About() {
   return (
     <Layout title="About Us">
 		<head>
-		<link rel="icon" href="../public/images/hagtaglogo.png" />
+		<link rel="icon" href={logo} />
 		</head>
 	    <div className="header-container">
 	  		<h1 className="title">HagTag</h1>
