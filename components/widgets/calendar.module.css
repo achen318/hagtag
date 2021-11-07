@@ -15,3 +15,11 @@
 .calendar td{
   text-align: center;
 }
+
+.calendar button:hover{
+  background-color:#534aff2a;
+}
+
+.calendar tr{
+  background-color:white;
+}
