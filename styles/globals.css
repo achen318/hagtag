@@ -23,7 +23,7 @@ img {
 }
 
 .site-theme {
-  background: #bae1ff;
+  background: #3f72af;
 }
 
 .navbar-nav a {
@@ -31,4 +31,72 @@ img {
   padding-left: 5px;
   padding-right: 10px;
   padding-top: 0;
+}
+
+/* landing page */
+
+.landing-page {
+  margin: 0;
+  background-color: #bae1ff;
+}
+
+.about {
+  font-size: 1.6rem;
+  font-weight: normal;
+  padding-bottom: 2em;
+}
+.header-container {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 6em;
+}
+
+.mid-container {
+  border-radius: 10px;
+  box-shadow: #3f72af 10px 12px;
+  background-color: #f9f7f7;
+  margin-bottom: 6em;
+  text-align: center;
+  width: auto;
+  padding: 3em 0;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 2;
+  color: #112d4e;
+}
+
+h1 {
+  color: #112d4e;
+}
+
+li {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 2;
+}
+.title {
+  font-size: 5rem;
+  padding-bottom: 0.5em;
+}
+
+hr {
+  border: 2px solid rgb(73, 81, 83);
+  text-align: center;
+  border-radius: 5px;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+.heading {
+  text-align: center;
+}
+
+.image {
+  margin: 3em;
+  text-align: center;
 }
