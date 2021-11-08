@@ -110,7 +110,7 @@ class Calendar extends React.Component {
                 <tr className={styles.calendar} key={i}>
                   {week.map((day, j) => {
                     return <td key={j}>
-                    <button type="button" className="btn btn-white d-inline">{day}</button>
+                    <button type="button" className="btn btn-white d-inline">🔥</button>
                     </td>;
                   })}
                 </tr>
